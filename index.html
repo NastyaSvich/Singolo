@@ -1,37 +1,52 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<meta charset="UTF-8">
 <link href="style.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Lato:100,400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-<section class="firstsection">
+<section id="fi" class="fi scroll">
+<section class="firstsection" >
 
- <header>
+ <header >
   <div class="img"><img src="assets/singolo.png" alt=""></div>
-  <div class="navig">
-    <ul class="tag">
-      <li><h1 class="h1">HOME</h1></li>
-      <li><h1 class="h1">SERVICES</h1></li>
-      <li><h1 class="h1">PORTFOLIO</h1></li>
-      <li><h1 class="h1">ABOUT</h1></li>
-      <li><h1 class="h1">CONTACT</h1></li>
-    </ul>
+  <div class="navig" id = "menu">
+    <ul id = "tag">
+        <li><a class="active" href="#fi">HOME</a></li>
+        <li><a href="#our">SERVICES</a></li>
+        <li><a href="#port">PORTFOLIO</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#thh">CONTACT</a></li>
+      </ul>
   </div>
  </header>
 <main>
-    <article class="slider">
-    <div class="strN">
-        <img src="assets/strN.png" alt="" />
-    </div>
-    <div class="tel">
-        <img src="assets/tel1.png" alt="" />
-    </div>
-    <div class="strV">
-        <img src="assets/strV.png" alt="" />
-    </div>
-    </article>
+  <section class="slider1"></section>
+  <div class="slider" id="slider">
+<div class="width slider__width">
+<div class="slider__wrapper">
+<div class="item slider__item">
+<div class="tel1"><img src="assets/tel1.png" alt="" id="photo" class="active1 slider__content--vertical"/></div>
+        <a onclick="set();"><div class="size1"><img id="q" src="assets/black.png" alt="" /></div></a>
+        <div class="size"><img id = "p" src="assets/black.png" alt="" /></div>
+
+        <a onclick="set1();"><div class="size2"><img id="b" src="assets/black.png" alt="" /></div></a>
+        <div class="size0"><img id = "t" src="assets/black.png" alt="" /></div>
+</div>
+
+<div class="item slider__item">
+<img src="assets/tel2.png" alt="" class="slider_second_page">
+</div>
+  </div>
+</div>
+<a onclick="setBg();" class="slider__control slider__control_left" href="" role="button"></a>
+<a onclick="setBg();" class="slider__control slider__control_right" href="" role="button"></a>
+</div>
+
+<section id="ou"  class="our scroll">
+<section  id="our">
 
     <article class="OurServices">
       <h2 class="OurServicesGL">Our Services</h2>
@@ -95,28 +110,29 @@
             </div>
           </div>
         </article>
+      </section>
 </main>
-
 </section>
-
-
+</section>
+</section>
+</section>
+<section id="port" class="port scroll">
 <section class="secondsection">
 
-  <article>
-  <p class="p6">Portfolio</p>
+      <article>
+    <p class="p6">Portfolio</p>
   <p class="p0">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 
   <div class="navig">
-  <ul class="tag">
-  <li><button class="button">All</button></li>
-  <li><button class="button">Web Design</button></li>
-  <li><button class="button">Graphic Design</button></li>
-  <li><button class="button">Artwork</button></li>
+  <ul id="tag1">
+  <li><a onClick="func();"><button class="active button">All</button></a></li>
+  <li><a onClick="func();"><button class="button">Web Design</button></a></li>
+  <li><a onClick="func();"><button class="button">Graphic Design</button></a></li>
+  <li><a onClick="func();"><button class="button">Artwork</button></a></li>
   </ul>
   </div>
 
-  <main>
-   <div class="photo">
+  <main id = "i" class="photo">
     <div class="img"><img src="assets/1.png" alt=""></div>
     <div class="img"><img src="assets/2.png" alt=""></div>
     <div class="img"><img src="assets/3.png" alt=""></div>
@@ -129,17 +145,17 @@
     <div class="img"><img src="assets/10.png" alt=""></div>
     <div class="img"><img src="assets/11.png" alt=""></div>
     <div class="img"><img src="assets/12.png" alt=""></div>
-  </div>
-     </main>
+  </main>
   </article>
 
-    <footer class="footer">
+<section id="about" class="about scroll">
+    <footer  class="footer">
     <p class="p4">About Us</p>
     <p class="p9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 
     <div class="port">
   <div class="portpeople">
-    <div class="photo photo1">
+    <div class="photo1">
     <img src="assets/port1.png" alt="">
     </div>
     <h3>Adam Jensen</h3>
@@ -182,50 +198,18 @@
   </div>
   </div>
   </footer>
-
+  </section>
+</section>
 </section>
 
-
-<section class="thirdsection">
+<section id="th" class="th scroll">
+<section  id="thh" class="thirdsection">
 
   <article>
   <p class="p6">Get a Quote</p>
   <p class="p0">Fusce dapibus, tellus ac curcus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac curcus commodo, tortor mauris condimentum nibh.</p>
 
-  <form name="form" id= "form" class="form">
-
-  <tr>
-  <p>
-  <td><input type="text" name="name" id="name" pattern="^[a-zA-Z]+$" required placeholder="Name(Required)"/></td>
-  </p>
-  </tr>
-
-  <tr>
-  <p>
-  <td><input type="email" name="email" id="email" required placeholder="Email(Required)" /></td>
-  </p>
-  </tr>
-
-  <tr>
-  <p>
-  <td><input type="text" minlength="2" name="subject" id="subject" placeholder="Subject" /></td>
-  </p>
-  </tr>
-
-  <tr>
-  <p>
-  <td><textarea rows="10" name="comment" id="comment" placeholder="Describe your project in detail..."></textarea></td>
-  </p>
-  </tr>
-
-  <tr>
-  <div class="submit">
-  <input type="submit" id ="submit" name = "submit" value="Отправить"/>
-  </div>
-  </tr>
-
-  </form>
-  <aside class="aside">
+  <aside  class="aside">
   <p class="p5">Contact Information</p>
   <p class="p7">Quisque hendrerit purus dapibus, ornare nibh vitae, viver&#45;ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
   <p class="p1"></p>
@@ -235,6 +219,47 @@
   <p class="p2"><img class="img7" src="assets/conv.png"  alt=""/><a href="mailto:info@singolo.com">info@singolo.com</a></p>
   </ki>
   </aside>
+
+  <form name="form" id="form" class="form" onsubmit="return false;">
+
+  <tr>
+  <p>
+  <td><input type="text" name="name" id="name" pattern="^[a-zA-Z]+$" required placeholder="Name(Required)"/></td>
+  </p>
+  </tr>
+
+  <tr>
+  <p>
+  <td><input type="email" name="email"  id="email" required placeholder="Email(Required)" /></td>
+  </p>
+  </tr>
+
+  <tr>
+  <p>
+  <td><input type="text" minlength="2"  id="subject" placeholder="Subject" /></td>
+  </p>
+  </tr>
+
+  <tr>
+  <p>
+  <td><textarea rows="10"  id="comment" placeholder="Describe your project in detail..."></textarea></td>
+  </p>
+  </tr>
+
+    <p class="submit">
+    <button id="submit" onclick="return validate();" value="Submit">Submit</button>
+    </p>
+    <div id="message_block" class="hidden">
+      <div id="message">
+    <p> Письмо отправлено<br>
+        Тема: <span id="result"></span><br>
+        Описание:  <span id="result2"></span>
+    </p>
+    <br>
+    <button id="close_button" onclick="location.reload();">OK</button>
+    </div>
+  </div>
+  </form>
   </article>
 
     <footer class="footer">
@@ -244,8 +269,9 @@
   <img class="img3" src="assets/tw.png"  alt=""/>
   <img class="img4" src="assets/ins.png" alt=""/></gi>
     </footer>
-
 </section>
+</section>
+<script src="script.js"></script>
 
 </body>
 </html>
