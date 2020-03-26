@@ -15,9 +15,6 @@ while(k--){a[k].src=m[k]};}
 
 ///////////////////////////////////////////////////
 
-
-//////////////////////////////////////////////////
-
 const MENU1 = document.getElementById('tag1');
 
 MENU1.addEventListener('click', (event) => {
@@ -62,39 +59,6 @@ for (let anchor of anchors) {
 
 //////////////////////////////////////////////////
 
-function validate(){
-
-   var x=document.forms["form"]["name"].value;
-   var y=document.forms["form"]["email"].value;
-   at=y.indexOf("@");
-   dot=y.indexOf(".");
-   if (x.length==0 && y.length==0 && at<1 || dot <1 ){
-alert("Необходимо ввести данные(почта должна быть в таком формате: ###@####.##)");
-      return false;
-   }
-
-   else {
-   const SUBMIT = document.getElementById('submit');
-   SUBMIT.addEventListener('click', () => {
-   const subject = document.getElementById('subject').value.toString();
-
-   if(document.getElementById('subject').value == '')
-   {document.getElementById('result').innerText="Без темы";}
-   else{document.getElementById('result').innerText=subject;}
-
-   const subject2 = document.getElementById('comment').value.toString();
-
-   if(document.getElementById('comment').value == '')
-   {document.getElementById('result2').innerText="Без описания";}
-   else{
-     document.getElementById('result2').innerText=subject2;
-   }
-   document.getElementById('message_block').classList.remove('hidden');
-   });}
-  }
-
-//////////////////////////////////////////////////
-
   var click=0;
   function setBg() {
   {
@@ -117,7 +81,8 @@ document.getElementById('q').value = ++click1;
 if (click1%2!=0) {
 document.getElementById('t').style.opacity = "0";}
 if (click1%2==0) {
-document.getElementById('t').style.opacity = "1";}
+document.getElementById('t').style.opacity = "1";
+}
 }
 }
 
@@ -134,7 +99,20 @@ document.getElementById('p').style.opacity = "1";}
 }
 }
 
+//////////////////////////////////////////////////
 
+var click3=1;
+function set2() {
+{
+document.getElementById('fo').value = ++click3;
+if (click3%2!=0) {
+document.getElementById('menu').classList.add('spr');}
+if (click3%2==0) {
+document.getElementById('menu').classList.remove('spr');}
+}
+}
+
+//////////////////////////////////////////////////
 
 function validate(){
 
@@ -413,7 +391,6 @@ alert("Необходимо ввести данные(почта должна б
 ////////////////////////////////////////////////////////////////////////
 
     var sc = (function() {
-      'use strict';
 
       var section = document.querySelectorAll(".scroll");
       var sections = {};
@@ -434,3 +411,5 @@ alert("Необходимо ввести данные(почта должна б
         }
       };
     })();
+
+////////////////////////////////////////////////////////////////////////

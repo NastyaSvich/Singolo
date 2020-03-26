@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="style.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Lato:100,400,700' rel='stylesheet' type='text/css'>
 </head>
@@ -9,10 +10,10 @@
 
 <section id="fi" class="fi scroll">
 <section class="firstsection" >
-
- <header >
-  <div class="img"><img src="assets/singolo.png" alt=""></div>
-  <div class="navig" id = "menu">
+ <header>
+  <a onclick="set2();"><img id = "fo" src="assets/black.png" alt="" /></a>
+  <div class="img"></div>
+  <div class="navig spr" id = "menu">
     <ul id = "tag">
         <li><a class="active" href="#fi">HOME</a></li>
         <li><a href="#our">SERVICES</a></li>
@@ -45,13 +46,15 @@
 <a onclick="setBg();" class="slider__control slider__control_right" href="" role="button"></a>
 </div>
 
+<section  id="o">
 <section id="ou"  class="our scroll">
 <section  id="our">
 
-    <article class="OurServices">
+    <article class="OurServices" id="m">
       <h2 class="OurServicesGL">Our Services</h2>
         <div class="OurServicestxt">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
-          <div class="row">
+        <ul>
+          <li>
             <div class="section">
               <div class="imgserv">
                 <img src="assets/pencil.png" alt="" />
@@ -61,6 +64,8 @@
                 <p class="txt">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
               </div>
             </div>
+          </li>
+          <li>
             <div class="section">
               <div class="imgserv">
                 <img src="assets/lig.png" alt="" />
@@ -70,6 +75,8 @@
                 <p class="txt">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
               </div>
             </div>
+            </li>
+          <li>
             <div class="section">
               <div class="imgserv">
                 <img src="assets/h.png" alt="" />
@@ -79,8 +86,8 @@
                 <p class="txt">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
               </div>
             </div>
-          </div>
-          <div class="row">
+            </li>
+            <li>
             <div class="section">
               <div class="imgserv">
                 <img src="assets/phone.png" alt="" />
@@ -90,6 +97,8 @@
                 <p class="txt">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae&shy;sent elit leo.</p>
               </div>
             </div>
+            </li>
+            <li>
             <div class="section">
               <div class="imgserv">
                 <img src="assets/mes.png" alt="" />
@@ -99,6 +108,8 @@
                 <p class="txt">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi.Nulla a sem erat. Pellen&shy;tesque egestas venenatis lorem.</p>
               </div>
             </div>
+            </li>
+            <li>
             <div class="section">
               <div class="imgserv">
                 <img src="assets/star.png" alt="" />
@@ -108,10 +119,12 @@
                 <p class="txt">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
               </div>
             </div>
-          </div>
+            </li>
+        </ul>
         </article>
       </section>
 </main>
+</section>
 </section>
 </section>
 </section>
@@ -133,27 +146,32 @@
   </div>
 
   <main id = "i" class="photo">
-    <div class="img"><img src="assets/1.png" alt=""></div>
-    <div class="img"><img src="assets/2.png" alt=""></div>
-    <div class="img"><img src="assets/3.png" alt=""></div>
-    <div class="img"><img src="assets/4.png" alt=""></div>
-    <div class="img"><img src="assets/5.png" alt=""></div>
-    <div class="img"><img src="assets/6.png" alt=""></div>
-    <div class="img"><img src="assets/7.png" alt=""></div>
-    <div class="img"><img src="assets/8.png" alt=""></div>
-    <div class="img"><img src="assets/9.png" alt=""></div>
-    <div class="img"><img src="assets/10.png" alt=""></div>
-    <div class="img"><img src="assets/11.png" alt=""></div>
-    <div class="img"><img src="assets/12.png" alt=""></div>
+      <ul>
+    <li><div class="img"><img src="assets/1.png" alt=""></div></li>
+    <li><div class="img"><img src="assets/2.png" alt=""></div></li>
+    <li><div class="img"><img src="assets/3.png" alt=""></div></li>
+    <li><div class="img"><img src="assets/4.png" alt=""></div></li>
+    <li><div class="img"><img src="assets/5.png" alt=""></div></li>
+    <li><div class="img"><img src="assets/6.png" alt=""></div></li>
+    <li><div class="img"><img src="assets/7.png" alt=""></div></li>
+    <li><div class="img"><img src="assets/8.png" alt=""></div></li>
+    <li><div class="img hid"><img src="assets/9.png" alt=""></div></li>
+    <li><div class="img hid"><img src="assets/10.png" alt=""></div></li>
+    <li><div class="img hid"><img src="assets/11.png" alt=""></div></li>
+    <li><div class="img hid"><img src="assets/12.png" alt=""></div></li>
+  </ul>
   </main>
   </article>
 
+<section id="abo">
 <section id="about" class="about scroll">
     <footer  class="footer">
     <p class="p4">About Us</p>
     <p class="p9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 
-    <div class="port">
+    <div class="port" id="n">
+      <ul>
+        <li>
   <div class="portpeople">
     <div class="photo1">
     <img src="assets/port1.png" alt="">
@@ -167,7 +185,8 @@
       <img src="assets/in.png" alt="">
     </div>
   </div>
-
+</li>
+<li>
   <div class="portpeople">
     <div class="photo photo1">
         <img src="assets/port2.png" alt="">
@@ -181,8 +200,9 @@
       <img src="assets/in.png" alt="">
     </div>
   </div>
+</li>
 
-
+<li>
   <div class="portpeople">
     <div class="photo photo1">
         <img src="assets/port3.png" alt="">
@@ -196,9 +216,12 @@
       <img src="assets/in.png" alt="">
     </div>
   </div>
+  </li>
+</ul>
   </div>
   </footer>
   </section>
+</section>
 </section>
 </section>
 
@@ -211,7 +234,7 @@
 
   <aside  class="aside">
   <p class="p5">Contact Information</p>
-  <p class="p7">Quisque hendrerit purus dapibus, ornare nibh vitae, viver&#45;ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+  <p class="p7">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
   <p class="p1"></p>
   <ki>
   <p class="p2"><img class="img5" src="assets/geol.png" alt=""/>Elm St. 14/05 Lost City</p>
