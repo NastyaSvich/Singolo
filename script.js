@@ -1,5 +1,6 @@
 function func(){
 var k, j, n, d, m, a;
+document.querySelectorAll('img').forEach(el => el.classList.remove('imgJS'));
 a=document.getElementById("i").getElementsByTagName("img");
 j=k=a.length;
 m=[];
@@ -411,5 +412,3 @@ alert("Необходимо ввести данные(почта должна б
         }
       };
     })();
-
-////////////////////////////////////////////////////////////////////////
